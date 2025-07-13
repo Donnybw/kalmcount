@@ -15,7 +15,6 @@
     "luxon": "^3.7.1",
     "react-player": "2.16.0",
     "react-player": "^2.16.1",
-    "framer": "^2.4.1"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

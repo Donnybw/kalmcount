@@ -9,8 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-dom": "^19.1.0",
-    "react": "^19.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^10.18.0",
     "luxon": "^3.7.1",
     "react-player": "^2.16.1"
   },

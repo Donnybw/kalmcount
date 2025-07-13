@@ -1,0 +1,6 @@
+{
+  "name": "KalmCount: Dose & Session Tracker",
+  "description": "A client-side web application to help users track their daily therapeutic-ketamine doses, manage shipments, and engage with calming session companion tools like guided breathing, mantras, and a journal.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

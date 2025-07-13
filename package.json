@@ -1,0 +1,25 @@
+{
+  "name": "kalmcount:-dose-&-session-tracker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react-dom": "^19.1.0",
+    "react": "^19.1.0",
+    "framer-motion": "^12.23.3",
+    "luxon": "^3.7.1",
+    "react-player/youtube": "2.16.0",
+    "react-player": "^2.16.1",
+    "framer": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  }
+}

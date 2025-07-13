@@ -11,7 +11,7 @@
   "dependencies": {
     "react-dom": "^19.1.0",
     "react": "^19.1.0",
-    "framer-motion": "^12.23.3",
+    "framer-motion": "^10.13.1",
     "luxon": "^3.7.1",
     "react-player": "2.16.0",
     "react-player": "^2.16.1",

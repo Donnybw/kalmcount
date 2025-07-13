@@ -13,8 +13,7 @@
     "react": "^19.1.0",
     "framer-motion": "^10.13.1",
     "luxon": "^3.7.1",
-    "react-player": "2.16.0",
-    "react-player": "^2.16.1",
+    "react-player": "^2.16.1"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

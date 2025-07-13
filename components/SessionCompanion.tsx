@@ -344,24 +344,24 @@ const GuidedBreathing = ({ onLogActivity }: { onLogActivity: LogActivityFn }) =>
             </div>
 
             {/* Controls at the bottom */}
-            <div className="w-full relative flex justify-center items-center" style={{ minHeight: '4rem' }}>
-                 <div className="w-full max-w-xs flex justify-center">
+            <div className="w-full flex justify-center items-center" style={{ minHeight: '4rem' }}>
+                 <div className="relative w-full max-w-xs">
                     <select 
                         id="breathing-method"
                         value={selectedMethodId} 
                         onChange={handleMethodChange} 
                         disabled={isAnimating}
-                        className="font-nunito w-full bg-calm-indigo-950/50 p-2 rounded-lg border border-calm-blue-400 focus:ring-2 focus:ring-calm-blue-400 text-center transition-opacity disabled:opacity-50 appearance-none"
+                        className="font-nunito w-full bg-calm-indigo-950/50 p-2 pl-4 pr-12 rounded-lg border border-calm-blue-400 focus:ring-2 focus:ring-calm-blue-400 text-center transition-opacity disabled:opacity-50 appearance-none"
                     >
                         {BREATHING_METHODS.map(method => (
                             <option key={method.id} value={method.id}>{method.name}</option>
                         ))}
                     </select>
-                </div>
-                <div className="absolute bottom-2 right-0">
-                    <Button variant="ghost" className="p-2" onClick={() => setIsInfoModalOpen(true)} aria-label="Show breathing technique info">
-                        <InfoIcon className="h-6 w-6"/>
-                    </Button>
+                    <div className="absolute inset-y-0 right-0 flex items-center pr-1">
+                        <Button variant="ghost" className="p-2" onClick={() => setIsInfoModalOpen(true)} aria-label="Show breathing technique info">
+                            <InfoIcon className="h-6 w-6"/>
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1133,7 +1133,7 @@ export default function SessionCompanion({ borderVariant, onLogActivity }: Sessi
         )}
       </AnimatePresence>
       <div className="p-2">
-        <div className="flex flex-wrap justify-center gap-1 bg-calm-indigo-800/30 rounded-lg p-1">
+        <div className="flex flex-wrap justify-center items-center gap-x-1 gap-y-2 bg-calm-indigo-800/30 rounded-lg p-1">
           {tabs.map(tab => (
             <button
               key={tab}
@@ -1143,7 +1143,7 @@ export default function SessionCompanion({ borderVariant, onLogActivity }: Sessi
                 }
                 setActiveTab(tab);
               }}
-              className={`${activeTab === tab ? '' : 'hover:bg-white/5'} flex-grow relative rounded-md px-3 py-1.5 text-sm font-medium text-calm-blue-200 transition focus-visible:outline-2`}
+              className={`${activeTab === tab ? '' : 'hover:bg-white/5'} relative rounded-md px-3 py-1.5 text-sm font-medium text-calm-blue-200 transition focus-visible:outline-2`}
             >
               {activeTab === tab && (
                 <motion.span
@@ -1152,7 +1152,7 @@ export default function SessionCompanion({ borderVariant, onLogActivity }: Sessi
                   transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                 />
               )}
-              <span className="relative z-20 text-center">{tab}</span>
+              <span className="relative z-20 text-center whitespace-nowrap">{tab}</span>
             </button>
           ))}
         </div>

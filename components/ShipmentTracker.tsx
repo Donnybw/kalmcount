@@ -18,7 +18,7 @@ const TrackingModal = ({ url, onClose }: { url: string; onClose: () => void }) =
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm p-4 md:p-8 flex items-center justify-center"
+            className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm p-4 md:p-8 flex items-stretch justify-center"
             onClick={onClose}
         >
             <Card

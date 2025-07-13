@@ -1133,7 +1133,7 @@ export default function SessionCompanion({ borderVariant, onLogActivity }: Sessi
         )}
       </AnimatePresence>
       <div className="p-2">
-        <div className="flex space-x-1 bg-calm-indigo-800/30 rounded-lg p-1">
+        <div className="flex flex-wrap justify-center gap-1 bg-calm-indigo-800/30 rounded-lg p-1">
           {tabs.map(tab => (
             <button
               key={tab}
@@ -1143,7 +1143,7 @@ export default function SessionCompanion({ borderVariant, onLogActivity }: Sessi
                 }
                 setActiveTab(tab);
               }}
-              className={`${activeTab === tab ? '' : 'hover:bg-white/5'} flex-1 relative rounded-md px-3 py-1.5 text-sm font-medium text-calm-blue-200 transition focus-visible:outline-2`}
+              className={`${activeTab === tab ? '' : 'hover:bg-white/5'} flex-grow relative rounded-md px-3 py-1.5 text-sm font-medium text-calm-blue-200 transition focus-visible:outline-2`}
             >
               {activeTab === tab && (
                 <motion.span
@@ -1152,7 +1152,7 @@ export default function SessionCompanion({ borderVariant, onLogActivity }: Sessi
                   transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                 />
               )}
-              <span className="relative z-20">{tab}</span>
+              <span className="relative z-20 text-center">{tab}</span>
             </button>
           ))}
         </div>

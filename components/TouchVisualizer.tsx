@@ -193,7 +193,7 @@ const TouchVisualizer = () => {
             ref={visualizerRef}
             className={
                 isFullScreen 
-                ? "fixed inset-0 z-50 bg-black" 
+                ? "fixed inset-0 z-50 bg-black w-screen h-screen" 
                 : "w-full h-[24rem] bg-black rounded-lg relative overflow-hidden shadow-inner"
             }
         >

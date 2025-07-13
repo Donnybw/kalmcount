@@ -13,7 +13,7 @@
     "react": "^19.1.0",
     "framer-motion": "^12.23.3",
     "luxon": "^3.7.1",
-    "react-player/youtube": "2.16.0",
+    ""react-player": "2.16.0",
     "react-player": "^2.16.1",
     "framer": "^2.4.1"
   },

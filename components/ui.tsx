@@ -79,7 +79,7 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
             }}
         />
 
-        <div className="relative z-10">
+        <div className="relative z-10 h-full">
             {children}
         </div>
       </motion.div>
